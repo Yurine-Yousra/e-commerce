@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    section{
+        @apply  py-[50px]
+    }
+}
+
+@layer components {
+    .container{
+    @apply w-[70%] mx-auto pt-5;
+    }
+    .btn__primary{
+    @apply py-2 rounded-sm bg-slate-50 text-black border border-solid border-black px-4;
+    }
+    .btn__secondary{
+    @apply py-2 px-4 rounded-lg bg-black text-white;
+    }
+    .form__label {
+        @apply text-black font-semibold text-[16px] mb-2 leading-7;
+    }
+    .form__input {
+        @apply w-full px-4 py-3 border border-solid border-black focus:outline-none
+        focus:border-black text-[16px] leading-7 text-black placeholder:text-gray-600 cursor-pointer;
+    }
+    .card {
+        @apply w-[100%] lg:h-[430px] bg-gray-100 transition-all transform delay-200 ;
+    }
+
+    
+    .card:hover {
+        @apply bg-black-opacity-50 text-white cursor-pointer;
+    }
+    
+    .spany {
+        @apply hover:bg-transparent hover:border hover:border-solid hover:border-black hover:text-black transition-all transform delay-200 hover:cursor-pointer w-[10rem] text-[24px] font-bold font-dancing mb-10;
+    }
+    
+    .btn__hover {
+        @apply transition-all;
+    }
+    
+    /* Change button styles when the card is hovered */
+    .card:hover .btn__hover {
+        background-color: white; /* or other styles */
+        color: black;
+    }
+   
+      .slick-items {
+        padding:10px;
+        text-align:center;
+        margin-right:10px;
+        margin-left:10px;      }
+      
+}
